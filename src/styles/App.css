@@ -6,7 +6,8 @@
 
 #root {
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .App {
@@ -25,6 +26,10 @@
 	margin-right: 0.5rem;
 }
 
+.post_btns {
+	display: flex;
+}
+
 .post-enter {
 	transform: translateX(-350px);
 }
@@ -38,4 +43,33 @@
 .post-exit-active {
 	transform: translateX(-350px);
 	transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+	margin-top: 30px;
+	display: flex;
+}
+
+.page {
+	padding: 10px;
+	border: 1px solid teal;
+	cursor: pointer;
+}
+
+.page__current {
+	border: 2px solid orange;
+	font-weight: bold;
+}
+
+.navbar {
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	background-color: rgb(181, 181, 181);
+}
+
+.navbar_links {
+	margin-left: auto;
 }
